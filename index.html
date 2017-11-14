@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <title>The 3 web languages</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome icon cheatsheet: http://fontawesome.io/cheatsheet/ -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Test 1</h1>
+  </header>
+
+  <main class="tab_container">
+    
+    <!--
+      THE TABS
+      the 'checked' attribute determines which tab will show when the page loads
+      the actual radio buttons for the input tag are hidden in the CSS
+    -->
+    <input id="tab1" type="radio" name="tabs" checked>
+    <!-- the *label* for the radio button forms the clickable tabs -->
+    <label for="tab1"><i class="fa fa-code"></i><span>HTML5</span></label>
+
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2"><i class="fa fa-hashtag"></i><span>CSS</span></label>
+
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3"><i class="fa fa-bug"></i><span>JavaScript</span></label>
+
+    <!-- content for tab 1: HTML5 -->
+    <section id="content1" class="tab-content">
+      <header>
+        <h2>HTML5</h2>
+      </header>
+
+      <table>
+		<tr>
+			<td><h2>Number</h2></td>
+			<td><h2>Fact</h2></td>		
+		</tr>
+		
+		<tr>
+			<td>1.</td>
+			<td>You can use CSS to style a webpage.</td>
+		</tr>
+		
+		<tr> 
+			<td>2.</td>
+			<td>HTML5 is an easy language to learn</td>
+		</tr>
+		
+		<tr> 
+			<td>3.</td>
+			<td>HTML stands for Hyper Text Markup Language</td>
+		</tr>
+		
+		<tr> 
+			<td>4.</td>
+			<td>HTML elements are represented by tags</td>
+		</tr>
+		
+		<tr> 
+			<td>5.</td>
+			<td>Browsers do not display the HTML tags, but use them to render the contents of the page</td>
+		</tr>
+		
+	  
+        <!-- one row of table header tags -->
+        <!-- 5 rows of table data tags -->
+      </table>
+
+      <footer>
+        <p><a href="#">add a link to an HTML5 resource here</a></p>
+      </footer>
+    </section>
+
+    <!-- content for tab 2: CSS -->
+    <section id="content2" class="tab-content">
+      <header>
+        <h2>CSS</h2>
+      </header>
+
+      <ul>
+        <!-- 5 li tags -->
+		<li>CSS stands for Cascading Style Sheets.</li>
+		<li>It can control the layout of multiple web pages all at once.</li>
+		<li>Can be added to HTML elements in 3 ways</li>
+		<li>Describes how HTML elements are to be displayed on screen</li>
+		<li>Inline - Internal - External</li>
+      </ul>
+
+      <footer>
+        <p>add a link to a CSS resource (see the HTML link above)</p>
+      </footer>
+    </section>
+
+    <!-- content for tab 3: JavaScript -->
+    <section id="content3" class="tab-content">
+      <header>
+        <h2>JavaScript</h2>
+      </header>
+
+      <dl>
+        <!-- 5 pairs of dt and dd tags -->
+      </dl>
+
+      <footer>
+        <p>add a link to a JavaScript resource</p>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- adapted from a CodePen by Thierry Koblentz: http://cssmojo.com/pure-css-tab-panel/ -->
+</body>
+</html>
