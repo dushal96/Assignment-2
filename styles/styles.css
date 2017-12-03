@@ -1,158 +1,71 @@
-body {
-  margin: 0;
-}
-h1 {
-  font-size: 1.25em;
-  text-align: center;
-  background: #444;
-  color: #eee;
-  margin: 0;
-  padding: 0.5em;
-}
-h2 {
-  margin-top: 0;
-}
-footer a:link,
-footer a:visited {
-  color: #444;
-}
-footer a:hover {
-  color: #888;
+body {margin:0;}
+
+main {
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 
-/*
-  Hides the radio buttons ('input' tags) themselves, but not
-  their labels, which form the tabs.
-  
-  Also sets styles for the section tags and hides them.
-*/
-input,
-section {
-  display: none;
-  padding: 1em;
-  clear: both;
-}
-section footer {
-  position: absolute;
-  bottom: 0;
-  background: #ccc;
-  width: 100%;
-  margin-left: -1em;
-}
-section footer p {
-  padding: 0 1em;
-  line-height: 1.5em;
-  text-align: center;
-}
-/*
-  displays and styles 'label' tags (for radio button 'input' tags)
-*/
-label {
-  display: block;
-  box-sizing: border-box;
-  float: left;
-  width: 33.33%;
-  color: #888;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  background: #eee;
-  line-height: 3em;
-  border-right: 1px solid #444;
-}
-/* hides the tab text but leaves the icons visible: */
-label span {
-  display: none;
-}
-label:last-child {
-  border-right: none;
-}
-
-/*
-  The radio button label tags form the 'tabs' used to show the 
-  sections - when clicked, the input tag 'checked' attribute 
-  becomes true, so the section tags with IDs 'content1-3' can
-  be targeted *in relation* to each radio button.
-
-  This changes the display of specific section elements (with
-  IDs 'content1-3') from 'none' to 'block', but *only when* the 
-  associated and preceding (~) radio button becomes 'checked'. 
-
-  For the CSS3 ~ selector see:
-  http://www.w3schools.com/cssref/sel_gen_sibling.asp
-*/
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3 {
-  display: block;
-}
-/*
-  Styles label elements (tabs) *only* when they're 'checked'
-*/
-[id^="tab"]:checked + label {
-  background: #ccc;
-  color: #222;
-}
-[id^="tab"]:checked + label .fa {
-  color: #090;
-}
-
-.tab-content {
-  background: #fff;
-}
-.fa {
-  margin-right: 10px;
-}
-
-
-/* --------- Basic animation --------- */
-/*
-  this can all be commented out without
-  affecting the functionality of the tabs
-*/
-
-.tab_container section * {
-  animation: fadeIn 0.7s ease-in-out;
-}
-
-@keyframes fadeIn {
-
-  0% { 
-  	opacity: 0;
-  }
-
-  100% { 
-  	opacity: 1;
-  }
-  
-}
-
-
-/* --------- table styles below here --------- */
-
-table, td {
-
-		text-align: center; 
-		line-height: 3em;
-		border: 0.1em solid green;
-		width: 600px;
-		border-collapse:collapse;
-		float: center;
-		
-}
-
-/* --------- unordered list styles below here --------- */
 ul {
-		 list-style-type: none;
-		 margin: 1em 0em 0em -2em;
-		 line-height: 2em;
-		 paddings: 1em 1em 1em 1em;
-		 font-family: Calibri Light;
-		 font-size: 125%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E67E22;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-/* --------- definition list styles below here --------- */
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #F5B041;
+}
+
+.active {
+    background-color: #CA6F1E;
+}
+
+.banner {
+ max-width: 100%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+} 
+
+
+
+
+
 
 
 
