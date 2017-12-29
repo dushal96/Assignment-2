@@ -1,8 +1,28 @@
-"# Assignment-2" 
+# Assignment-2
+
+# Website Link
+
+# W3 Validator
+![Screenshot](
+# Navigation Structure
+![Screenshot](
+# Screen Designs
+![Screenshot](
 
 
+# Test Plan
+![Screenshot](
 
-Hi everyone.
+# References
+![Screenshot](
 
-i have added code to index page 
-https://www.nyip.co.uk/photo-articles/cameras-and-gear/what-is-rim-lighting 
+# Animation used
+## Slideshow
+## Rollover image
+## Hover 
+## Shake
+## Gif's
+
+# API Used
+## Google API
+## Google Fonts  
