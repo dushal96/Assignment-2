@@ -2,44 +2,68 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/de1742f547.js"></script>
+  <title> Limbani's Photography</title>
 </head>
 <body>
+<div class="navback">
+	<a href="index.html"> <img src="images/logo.png" alt="logo"style="max-height: 150px"> </a>
+</div>
 <!--  NAVIGATION START --> 
   <nav class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-	<script src="javascript/nav.js"> </script>
+    <a href="index.html" class="active">Home</a>
+    <a href="tips&tricks.html">Tips & Tricks</a>
+    <a href="about.html">About</a>
+	<i style="float:right" class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+	<i style="float:right" class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+	<i style="float:right" class="fa fa-pinterest-square fa-4x" aria-hidden="true"></i>
+	<i style="float:right" class="fa fa-tumblr-square fa-4x" aria-hidden="true"></i>
+    <script src="javascript/nav.js"> </script>
   </nav>
 <!--  NAVIGATION END --> 
-<!--  BANNER START --> 
-  <div class="banner">
-    <img src="images/photo_banner.jpg" alt="photography" style=" max-width: 100% " >
-  </div>
-<!--  BANNER END --> 
+<!--  SLIDE START --> 
+<div id="wrapper">
+<div id="slider">
+  <figure>
+    <img src="images/sl1.jpg" alt="sl1">
+    <img src="images/sl2.jpg" alt="sl2">
+    <img src="images/sl3.jpg" alt="s13">
+    <img src="images/sl4.jpg" alt="s14">
+	<img src="images/sl5.jpg" alt="s15">
+  </figure>
+</div>
+</div>
+
+<!--  SLIDE END --> 
 <!--  CAMERA IMAGES START --> 
 <main>
   <div class="row">
     <section>
-	  <h2>Column</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, 
-	  eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. 
-	  Praesent scelerisque tortor sed accumsan convallis.</p>
+	  <h2>Traffic</h2>
+      <img src="images/camerascape5.gif" alt="Scape" styles="width:600px;height:400px;">
     </section>
-    <section>
-      <h2>Column</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, 
-	  eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. 
-	  Praesent scelerisque tortor sed accumsan convallis.</p>
-    </section> 
-    <section>
-      <h2>Column</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
-	  eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
-	  Praesent scelerisque tortor sed accumsan convallis.</p>
+	<section>
+	  <h2>Lens</h2>
+      <img src="images/camerascape4.gif" alt="New York Lens" style="width:600px;height:400px;">
     </section>
+	<section>
+	  <h2>New York</h2>
+      <img src="images/camerascape2.gif" alt="Galaxy" style="width:600px;height:400px;">
+    </section>
+	<section>
+	  <h2>Dubai</h2>
+      <img src="images/dub.jpg" onmouseover="this.src='images/dub1.jpg'" onmouseout="this.src='images/dub.jpg'" />
+    </section>
+	<section>
+	  <h2>Snow</h2>
+      <img src="images/scot1.jpg" onmouseover="this.src='images/scot1.jpg'" onmouseout="this.src='images/scot2.jpg'" />
+    </section>
+	<section>
+	  <h2>Italy</h2>
+      <img src="images/it1.jpg" onmouseover="this.src='images/it1.jpg'" onmouseout="this.src='images/it2.jpg'" />
+    </section>
+
   </div>
 <!--  CAMERA IMAGES END --> 
 </main>
@@ -47,8 +71,8 @@
 <footer>
   <p>Designed by: Dushal Limbani</p>
   <p>Contact information:07943151343</p>
+  <marquee behavior="scroll" direction="left">“Wherever there is light, one can photograph.” Alfred Stieglitz 1864 – 1946</marquee>
 </footer>
 <!--  FOOTER END -->
 </body>
 </html>
-
