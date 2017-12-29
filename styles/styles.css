@@ -174,7 +174,7 @@ img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
-
+/*START SHAKE ANIMATION */
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -188,6 +188,7 @@ img:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+/*END SHAKE ANIMATION */
 <script>
 function bigImg(x) {
     x.style.height = "64px";
